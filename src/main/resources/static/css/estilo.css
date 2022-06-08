@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: monospace;
+}
+
+header{
+    background-color: blueviolet;
+    padding: 20px;
+    display: flex;
+}
+
+header > h2{
+    color:#fff;
+    width: 70%;
+}
+.div-header-text{
+    width: 70%;
+    float: left;
+}
+.div-header-login{
+    float: right;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ .div-header-login span a{
+    /* list-style: none; */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+.container{
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 60%;
+}
+
+.container-projeto{
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 95%;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    padding: 8px;
+}
+
+.container > img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    padding: 24px;
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.card{
+    margin: auto;
+    width: 98%;
+}
+
+.a-edit{
+    color:green;
+}
+
+.a-edit:hover{
+    color:darkgreen;
+    font-weight: bold;
+}
+
+.a-delete{
+    color:crimson;
+}
+
+.a-delete:hover{
+    color:brown;
+    font-weight: bold;
+}
+
+.a-novo{
+    color:green;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.a-novo:hover{
+    border:2px solid darkgreen;
+    color:darkgreen;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.div-title{
+    background-color: blueviolet;
+    padding: 18px;
+    border-radius: 15px;
+}
+
+.div-title h2{
+    color: aliceblue;
+
+}
+
+.formulario{
+    margin-top: 18px;
+    padding: 8px;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:500px){
+    footer{
+        display: block;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+}
+
+.data{
+    width: 150px
+}
+
+.div-funcionarios{
+    margin-bottom: 0.5rem;
+}
