@@ -7,6 +7,15 @@ const showModalDeletar = function(path, id){
     $('#modalDeletar').modal('show')
 }
 
+const showFuncionario = function() {
+    var campoNomeFantasia = document.getElementById("campoNomeFantasia").classList.add("hidden")
+    var campoCnpj = document.getElementById("campoNomeFantasia").classList.add("hidden")
+    var campoNome = document.getElementById("campoNomeFuncionario").classList.remove("hidden")
+    var campoCpf = document.getElementById("campoCpf").classList.remove("hidden")
+    var campoTelefone = document.getElementById("campoTelefone").classList.remove("hidden")
+    //método esta sendo chamado, porem não arrumar as classes com "hidden"
+}
+
 const deletar = function(){
     if (path_selected != "" && id_selected != ""){
         window.location.href='/' + path_selected + '/delete/' + id_selected

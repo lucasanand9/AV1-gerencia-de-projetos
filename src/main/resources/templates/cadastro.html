@@ -21,7 +21,7 @@
       <h2>Gerência de Projetos</h2>
     </div>
     <div class="div-header-login">
-      <span><a href="/login"> Acessar<i class="fa-thin fa-circle-arrow-right"></i></a></span>
+      <span><a style="font-size:1.2rem;" href="/cadastro">Acessar<i class="fa-thin fa-circle-arrow-right"></i></a></span>
     </div>
     
   </header>
@@ -49,9 +49,27 @@
     </div>
   </nav>
 
-  <div class="container-login">
+  <div class="container container-login">
+    <h2 class="h2-registrar">
+      Cadastro
+    </h2>
    <form action="">
-    <div class="form-floating mb-3">
+      <div class="form-floating mb-3">
+        <!-- FUNCIONARIO -->
+        <div class="form-floating mb-3 hidden">
+          <input type="text" class="form-control" id="campoNomeFuncionario" placeholder="Nome Fantasia">
+          <label for="campoNomeFuncionario">Nome</label>
+        </div>
+        <div class="form-floating mb-3 hidden">
+          <input type="text" class="form-control" id="campoCpf" placeholder="Cpf">
+          <label for="campoCpf">Cpf</label>
+        </div>
+        <div class="form-floating mb-3 hidden">
+          <input type="number" class="form-control" id="campoTelefone" placeholder="Telefone">
+          <label for="campoTelefone">Nome</label>
+        </div>
+        <!-- ADM -->
+      <div class="form-floating mb-3 ">
         <input type="text" class="form-control" id="campoNomeFantasia" placeholder="Nome Fantasia">
         <label for="campoNomeFantasia">Nome fantasia</label>
       </div>
@@ -60,7 +78,7 @@
         <input type="number" class="form-control" id="campoCNPJ" placeholder="CNPJ">
         <label for="campoCNPJ">Cnpj</label>
       </div>
-
+      <!-- GERAL -->
       <div class="form-floating mb-3">
         <input type="email" class="form-control" id="campoEmail" placeholder="Email">
         <label for="campoEmail">Email</label>
@@ -76,12 +94,33 @@
         <label for="campoReconfirmaSenha">Confirmar Senha</label>
       </div>
 
+      <div class="form-check form-check-inline check-tipo-acesso1">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioAdm" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Adm</label>
+      </div>
+      <div class="form-check form-check-inline check-tipo-acesso2">
+        <input class="form-check-input" onclick="showFuncionario()" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Funcionario</label>
+      </div>
+
+      <!-- button -->
+      <div class="div-button-andText">
+        <div class="div-button">
+          <button type="button" class="btn btn-success btn-submit-margin">Success</button>
+        </div>
+        <div class="div-text">
+          <h6 class="div-loginNotCadastro">Já possui cadastro? <a href="">login</a></h6>
+        </div>       
+        </h6>
+      </div>
+
    </form>
   </div>
   
   <script src="./js/popper.min.js"></script>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="./bootstrap-5.0.0/js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
